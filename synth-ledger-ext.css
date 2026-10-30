@@ -1,0 +1,146 @@
+/* SYS.01 // NOCTURNAL SYNTH-LEDGER - SIMPLE WEBCORE LAYOUT EXTENSION
+ * Inherits color palette and orthogonal rules from Context/ProjDocs/ROOT_CONTEXT/synth-ledger.css
+ */
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 32px 16px;
+}
+
+.frame-shell {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
+a.btn-bank {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Simple Early-Web Header & Nav */
+.site-header {
+  background: var(--bg-panel);
+  border: 1px solid var(--accent-cyan);
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.site-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.site-tagline {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.nav-bank {
+  background: var(--bg-panel);
+  border: 1px solid var(--accent-purple);
+  padding: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Content Panels */
+.panel {
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.panel p {
+  margin-bottom: 10px;
+}
+
+.panel p:last-child {
+  margin-bottom: 0;
+}
+
+.simple-list {
+  list-style: square;
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.simple-list li {
+  margin-bottom: 6px;
+}
+
+/* Early-Internet Directory Table */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+td, th {
+  vertical-align: top;
+}
+
+/* Simple Form Controls */
+.form-row {
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  background: var(--bg-void);
+  color: var(--text-primary);
+  border: 1px solid var(--accent-purple);
+  padding: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent-cyan);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.site-footer {
+  border: 1px solid var(--border-muted);
+  background: var(--bg-panel);
+  padding: 10px 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}

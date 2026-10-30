@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberNest Labs // CyberNest Holdings LLC</title>
+  <link rel="stylesheet" href="../../Context/ProjDocs/ROOT_CONTEXT/synth-ledger.css">
+  <link rel="stylesheet" href="../../synth-ledger-ext.css">
+</head>
+<body>
+  <div class="frame-shell">
+    <div class="status-bar">
+      <div><span class="badge-cv">LABS</span> CyberNest Labs // CyberNest Holdings LLC</div>
+      <div><a href="mailto:cybernestllc@gmail.com">cybernestllc@gmail.com</a></div>
+    </div>
+
+    <header class="site-header">
+      <div class="site-title">CyberNest Labs</div>
+      <div class="site-tagline">Internal R&amp;D &amp; Security Software Department // Chief Architect: William R. Moore (Auxk0rd)</div>
+    </header>
+
+    <nav class="nav-bank">
+      <a class="btn-bank" href="../../index.html">Home</a>
+      <a class="btn-bank" href="../../AboutUs/index.html">About Us</a>
+      <a class="btn-bank active" href="index.html">CyberNest Labs</a>
+      <a class="btn-bank" href="../Farms_Landing/index.html">CyberNest Farms</a>
+      <a class="btn-bank" href="../ADMD_Landing/index.html">CyberNest ADMD</a>
+      <a class="btn-bank" href="../../ContactUs/index.html">Contact Us</a>
+    </nav>
+
+    <!-- ABOUT CYBERNEST LABS -->
+    <section class="panel">
+      <div class="panel-header">
+        <span>About CyberNest Labs</span>
+        <span>[R&amp;D]</span>
+      </div>
+      <p>
+        <strong>CyberNest Labs</strong> is the internal research and software engineering department of <strong>CyberNest Holdings LLC</strong>. The department builds local-first, air-gapped security, network provisioning, peer-to-peer communication, and system diagnostic tools engineered with Rust, Python, Go, POSIX Shell, and HTMX/Textual.
+      </p>
+      <p>
+        All software runs locally on loopback (<code>127.0.0.1</code>) without external cloud or CDN dependencies.
+      </p>
+    </section>
+
+    <!-- SOFTWARE ARCHIVE INDEX -->
+    <section class="panel" id="software-index">
+      <div class="panel-header">
+        <span>Software Codebase Index (.zip Downloads)</span>
+        <span>[6_ARCHIVES]</span>
+      </div>
+      <p>
+        Download zipped source distributions of CyberNest Labs software below. Each archive includes full source code, build scripts, SBOM manifests, and developer handoff documentation.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Software</th>
+              <th>Description</th>
+              <th>Stack</th>
+              <th class="num-right">Size</th>
+              <th>Download</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>BlackRoute-Web</strong></td>
+              <td>Web dynamic application security testing (DAST), HTTP/1.1 &amp; H2 crawler, DOM/header/secret auditor, and STIX/TAXII exporter.</td>
+              <td class="val-muted">Rust / Go / Python / sh / HTMX</td>
+              <td class="num-right val-muted">2.54 MB</td>
+              <td><a class="btn-bank" href="../../Context/ProjDocs/SoftwareZips/BlackRouteWebPublic-main.zip" download="BlackRouteWebPublic-main.zip">Download .zip</a></td>
+            </tr>
+            <tr>
+              <td><strong>KwikLogPro</strong></td>
+              <td>Cross-platform (Pop!_OS Linux &amp; Windows) air-gapped system health auditor, parallel log parser, and hardware regression engine.</td>
+              <td class="val-muted">Go / Rust / Python / sh / HTMX</td>
+              <td class="num-right val-muted">168 KB</td>
+              <td><a class="btn-bank" href="../../Context/ProjDocs/SoftwareZips/KwikLogPro-main.zip" download="KwikLogPro-main.zip">Download .zip</a></td>
+            </tr>
+            <tr>
+              <td><strong>NestComm</strong></td>
+              <td>Decentralized peer-to-peer (<code>libp2p</code> DHT + Noise) encrypted synchronous and store-and-forward messaging application.</td>
+              <td class="val-muted">Go / Rust / sh / HTMX</td>
+              <td class="num-right val-muted">242 KB</td>
+              <td><a class="btn-bank" href="../../Context/ProjDocs/SoftwareZips/NestComm-main.zip" download="NestComm-main.zip">Download .zip</a></td>
+            </tr>
+            <tr>
+              <td><strong>NestLink</strong></td>
+              <td>Peer-to-peer SSH stream multiplexer and NAT hole-punching tunnel utility for direct remote node troubleshooting.</td>
+              <td class="val-muted">Go / Rust / sh / HTMX</td>
+              <td class="num-right val-muted">4.90 MB</td>
+              <td><a class="btn-bank" href="../../Context/ProjDocs/SoftwareZips/NestLink-main.zip" download="NestLink-main.zip">Download .zip</a></td>
+            </tr>
+            <tr>
+              <td><strong>NestPatch</strong></td>
+              <td>Single-IP automated VLAN provisioner and network switch hardening terminal application (Wired 802.3 &amp; Wireless 802.11w).</td>
+              <td class="val-muted">Python (Textual) / Rust / Go / sh</td>
+              <td class="num-right val-muted">152 KB</td>
+              <td><a class="btn-bank" href="../../Context/ProjDocs/SoftwareZips/NestPatch-main.zip" download="NestPatch-main.zip">Download .zip</a></td>
+            </tr>
+            <tr>
+              <td><strong>NestSBOM</strong></td>
+              <td>Software Bill of Materials (SBOM) repository ingestion tool generating signed CycloneDX 1.5, SPDX 2.3, and Markdown ledgers.</td>
+              <td class="val-muted">Rust / Go / Python / sh / HTMX</td>
+              <td class="num-right val-muted">46 KB</td>
+              <td><a class="btn-bank" href="../../Context/ProjDocs/SoftwareZips/NestSBOM-main.zip" download="NestSBOM-main.zip">Download .zip</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top: 12px;">
+        <a class="btn-bank" href="../../Context/ProjDocs/SoftwareZips/index.html">Open Raw Archive Directory &amp; SHA-256 Checksums</a>
+        <a class="btn-bank" href="../../Context/ProjDocs/SoftwareZips/SHA256SUMS.txt" download="SHA256SUMS.txt">Download SHA256SUMS.txt</a>
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <div>CyberNest Labs // CyberNest Holdings LLC</div>
+      <div>Contact: <a href="mailto:cybernestllc@gmail.com">cybernestllc@gmail.com</a></div>
+    </footer>
+  </div>
+</body>
+</html>

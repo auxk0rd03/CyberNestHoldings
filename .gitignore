@@ -1,0 +1,3 @@
+# Exclude private internal governance documents from public GitHub Pages deployment
+Context/ProjDocs/ROOT_CONTEXT/Docs_Updated2026/Private/
+.DS_Store

@@ -5,7 +5,7 @@
 * **Legal Entity**: CyberNest Holdings LLC (a Pennsylvania Manager-Managed Operating LLC)
 * **Responsible Internal Department**: CyberNest Labs (Internal Department of CyberNest Holdings LLC)
 * **Technical Point of Contact**: William R. M. (Auxk0rd), President and Chief Architect
-* **Executive Sponsor**: James D. J. (D), Chief Executive Officer
+* **Executive Sponsor**: James D. J. (JD), Chief Executive Officer
 * **Last Updated**: October 29, 2026
 * **Technical Self-Assessment Score**: `110 / 110 Controls Enforced in Codebase` (*Official PIEE/SPRS Upload Pending SAM.gov UEI & DLA CAGE Assignment*)
 

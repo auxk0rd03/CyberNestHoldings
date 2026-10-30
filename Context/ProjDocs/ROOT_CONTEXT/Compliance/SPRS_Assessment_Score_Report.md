@@ -9,7 +9,7 @@
 * **Assessment Type**: Internal Engineering Basic Self-Assessment (NIST SP 800-171A)
 * **Assessment Date**: October 29, 2026
 * **Assessed By**: William R. M. (Auxk0rd), President and Chief Architect
-* **Reviewed By**: James D. J. (D), Chief Executive Officer
+* **Reviewed By**: James D. J. (JD), Chief Executive Officer
 * **Computed Technical Self-Assessment Score**: **110 / 110**
 
 ---

@@ -21,7 +21,7 @@ In accordance with the *CyberNest Holdings LLC Master Corporate Charter & Treasu
 2. **100% Domestic U.S. Citizen Executive Management**:
    * Management authority of CyberNest Holdings LLC is vested exclusively in its domestic managers (Article VII of the Operating Agreement):
      * **William R. M. (Auxk0rd)** - **President and Chief Architect** (Initial Member; U.S. Citizen): Authority over R&D, technical operations, systems architecture, security, treasury management, investment strategy, risk controls, banking relationships, and Capital Units valuation.
-     * **James D. J. (D)** - **Chief Executive Officer** (Initial Member; U.S. Citizen): Authority over sales, public outreach, growth strategy, partnerships, member coordination, operational execution, client/contract acquisition, and public representation.
+     * **James D. J. (JD)** - **Chief Executive Officer** (Initial Member; U.S. Citizen): Authority over sales, public outreach, growth strategy, partnerships, member coordination, operational execution, client/contract acquisition, and public representation.
 3. **Nature of Capital Units & Zero Foreign Ownership or Voting Control**:
    * Under Article III of the Operating Agreement and Section 3 of the Member Capital Ledger Policy, **Capital Units represent internal economic participation only** and are **not** equity interests, do **not** convey voting rights, do **not** convey ownership of Company property or intellectual property, and do **not** create creditor status.
    * The total `100,000` outstanding Capital Units recorded in the authoritative Member Capital Ledger are allocated exclusively among the two domestic initial Members and three internal Company departments:
@@ -59,7 +59,7 @@ In accordance with the *CyberNest Holdings LLC Master Corporate Charter & Treasu
   Signature: `________________________________________`  
   Date: `____________________`
 
-* **James D. J. (D)**  
+* **James D. J. (JD)**  
   *Chief Executive Officer - CyberNest Holdings LLC*  
   Signature: `________________________________________`  
   Date: `____________________`

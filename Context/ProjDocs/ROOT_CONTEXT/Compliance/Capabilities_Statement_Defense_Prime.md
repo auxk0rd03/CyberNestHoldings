@@ -49,4 +49,4 @@
 * **Internal NIST SP 800-171 Technical Self-Assessment**: `110 / 110 Controls Implemented in Codebase` (*Pending PIEE/SPRS Upload upon UEI/CAGE issuance*)
 * **Executive Leadership**:
   * **William R. M. (Auxk0rd)** - President and Chief Architect (R&D, Technical Operations, Systems Architecture, Security & Treasury Management)
-  * **James D. J. (D)** - Chief Executive Officer (Sales, Public Outreach, Growth Strategy, Partnerships & Client/Contract Acquisition)
+  * **James D. J. (JD)** - Chief Executive Officer (Sales, Public Outreach, Growth Strategy, Partnerships & Client/Contract Acquisition)

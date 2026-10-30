@@ -2,7 +2,7 @@
 
 * **Company:** CyberNest Holdings LLC (Pennsylvania Manager-Managed Operating LLC)
 * **Departments:** CyberNest Labs, CyberNest Farms, CyberNest ADMD
-* **Leadership:** William R. M. (Auxk0rd) — President & Chief Architect | James D. J. (D) — CEO
+* **Leadership:** William R. M. (Auxk0rd) — President & Chief Architect | James D. J. (JD) — CEO
 * **Official Contact:** `cybernestllc@gmail.com`
 * **Theme:** `Context/ProjDocs/ROOT_CONTEXT/synth-ledger.css` (`SYS.01 // NOCTURNAL SYNTH-LEDGER`)
 

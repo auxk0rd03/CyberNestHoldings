@@ -4,8 +4,8 @@
 * **Document ID**: `CN-POAM-2026-1029`
 * **Legal Entity**: CyberNest Holdings LLC (a Pennsylvania Manager-Managed Operating LLC)
 * **Responsible Internal Department**: CyberNest Labs (Internal Department of CyberNest Holdings LLC)
-* **Technical Point of Contact**: William Ray Moore (William R. Moore / Auxk0rd), President and Chief Architect
-* **Executive Sponsor**: James Dwayne Jarrell (James D. Jarrell / JD), Chief Executive Officer
+* **Technical Point of Contact**: William R. M. (Auxk0rd), President and Chief Architect
+* **Executive Sponsor**: James D. J. (D), Chief Executive Officer
 * **Last Updated**: October 29, 2026
 * **Technical Self-Assessment Score**: `110 / 110 Controls Enforced in Codebase` (*Official PIEE/SPRS Upload Pending SAM.gov UEI & DLA CAGE Assignment*)
 

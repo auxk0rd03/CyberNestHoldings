@@ -25,7 +25,7 @@
 | **Primary NAICS Code** | U.S. Census Bureau / SBA | `541511` - Custom Computer Programming Services |
 | **Secondary NAICS Codes** | U.S. Census Bureau / SBA | `541512` (Computer Systems Design Services), `541519` (Other Computer Related Services), `238210` (Electrical & Network Wiring Installation / Field Engineering) |
 | **Product Service Codes (PSC)** | Federal Procurement Data System (FPDS) | `D302` (IT and Telecom - Systems Development), `D310` (IT and Telecom - Cyber Security and Data Backup) |
-| **FOCI Status** | 32 CFR Part 117 (NISPOM) | `NONE` (100% Domestic Pennsylvania LLC - Managed by William Ray Moore & James Dwayne Jarrell) |
+| **FOCI Status** | 32 CFR Part 117 (NISPOM) | `NONE` (100% Domestic Pennsylvania LLC - Managed by William R. M. & James D. J.) |
 
 ---
 
@@ -35,12 +35,12 @@ Per the *Master Corporate Charter & Treasury Policy (v1.0.2)*, *Operating Agreem
 
 1. **Operating Company Structure**: CyberNest Holdings LLC is a manager-managed Pennsylvania operating company engaged in technical field engineering services and the development, ownership, licensing, and commercialization of proprietary software, security technologies, research outputs, and related intellectual property. CyberNest Holdings LLC owns 100% of all intellectual property, operating assets, and centralized corporate treasury capital. It is not an investment fund or pooled investment vehicle.
 2. **Executive Management & Separation of Authority**:
-   * **William Ray Moore (William R. Moore / Auxk0rd)** - **President and Chief Architect**: Holds authority over R&D, technical operations, systems architecture, security, centralized treasury management, Hybrid Investment Strategy execution, risk controls, banking relationships, and Capital Units valuation.
-   * **James Dwayne Jarrell (James D. Jarrell / JD)** - **Chief Executive Officer (CEO)**: Holds authority over sales, public outreach, growth strategy, partnerships, member coordination, operational execution, client/contract acquisition, and public representation.
+   * **William R. M. (Auxk0rd)** - **President and Chief Architect**: Holds authority over R&D, technical operations, systems architecture, security, centralized treasury management, Hybrid Investment Strategy execution, risk controls, banking relationships, and Capital Units valuation.
+   * **James D. J. (D)** - **Chief Executive Officer (CEO)**: Holds authority over sales, public outreach, growth strategy, partnerships, member coordination, operational execution, client/contract acquisition, and public representation.
 3. **Member Capital Ledger Allocation (100,000 Total Outstanding Capital Units)**:
    * *Note*: Under Article II & Article III of the Operating Agreement, Members and internal departments do not own Company assets, intellectual property, or treasury funds; Capital Units represent internal economic participation only (not equity, voting stock, or creditor status).
-   * **William Ray Moore**: `40,000 Capital Units` (`40%` Economic Participation)
-   * **James Dwayne Jarrell**: `37,000 Capital Units` (`37%` Economic Participation)
+   * **William R. M.**: `40,000 Capital Units` (`40%` Economic Participation)
+   * **James D. J.**: `37,000 Capital Units` (`37%` Economic Participation)
    * **CyberNest Labs (Internal Department)**: `10,000 Capital Units` (`10%` Economic Participation)
    * **CyberNest Farms (Internal Department)**: `10,000 Capital Units` (`10%` Economic Participation)
    * **CyberNest ADMD (Internal Department)**: `3,000 Capital Units` (`3%` Economic Participation)

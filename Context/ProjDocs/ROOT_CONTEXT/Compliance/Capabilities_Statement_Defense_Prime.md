@@ -48,5 +48,5 @@
 * **SAM.gov UEI**: `Pending Initial SAM.gov Registration (Not Yet Assigned)` | **DLA CAGE Code**: `Pending SAM.gov Registration (Not Yet Assigned)`
 * **Internal NIST SP 800-171 Technical Self-Assessment**: `110 / 110 Controls Implemented in Codebase` (*Pending PIEE/SPRS Upload upon UEI/CAGE issuance*)
 * **Executive Leadership**:
-  * **William Ray Moore (William R. Moore / Auxk0rd)** - President and Chief Architect (R&D, Technical Operations, Systems Architecture, Security & Treasury Management)
-  * **James Dwayne Jarrell (James D. Jarrell / JD)** - Chief Executive Officer (Sales, Public Outreach, Growth Strategy, Partnerships & Client/Contract Acquisition)
+  * **William R. M. (Auxk0rd)** - President and Chief Architect (R&D, Technical Operations, Systems Architecture, Security & Treasury Management)
+  * **James D. J. (D)** - Chief Executive Officer (Sales, Public Outreach, Growth Strategy, Partnerships & Client/Contract Acquisition)

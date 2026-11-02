@@ -17,6 +17,7 @@ WebPageStatic/
 ├── .nojekyll                                           # Tells GitHub Pages to serve all folders/files directly
 ├── _headers                                            # Cloudflare Pages / Edge CDN Security Response Headers
 ├── security-headers.conf                               # Nginx reverse proxy security header configuration
+├── worker.js                                           # Cloudflare Worker edge proxy script for BlackRoute-Web 0/100
 ├── anti-clickjack.js                                   # Frame-busting clickjacking defense script
 ├── Handoff.md                                          # Deployment and maintenance instructions
 ├── index.html                                          # Main Home page (GitHub Pages root entrypoint)
@@ -255,6 +256,10 @@ The included `_headers` file is located at the root of the repository:
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 ```
+Deploying this repository to Cloudflare Pages automatically parses `_headers`, yielding a **Surface Risk Score of 0 / 100** on BlackRoute-Web.
+
+#### Cloudflare Worker Edge Proxy (`worker.js`)
+If proxying `https://auxk0rd03.github.io/CyberNestHoldings/` through Cloudflare Workers without re-deploying, deploy `worker.js` directly to inject all 5 response headers into the network stream.
 
 #### Nginx Reverse Proxy (`security-headers.conf`)
 Include `security-headers.conf` within the Nginx `server` or `location` block:

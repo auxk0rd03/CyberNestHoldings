@@ -144,3 +144,16 @@ textarea {
   flex-wrap: wrap;
   gap: 8px;
 }
+
+/* Utilities for zero-inline-style CSP compliance */
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-14 {
+  margin-top: 14px;
+}
+
+.font-12 {
+  font-size: 12px;
+}

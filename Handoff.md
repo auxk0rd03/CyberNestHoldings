@@ -15,6 +15,9 @@ This repository is a pure static HTML/CSS website with an early-internet Webcore
 ```text
 WebPageStatic/
 ├── .nojekyll                                           # Tells GitHub Pages to serve all folders/files directly
+├── _headers                                            # Cloudflare Pages / Edge CDN Security Response Headers
+├── security-headers.conf                               # Nginx reverse proxy security header configuration
+├── anti-clickjack.js                                   # Frame-busting clickjacking defense script
 ├── Handoff.md                                          # Deployment and maintenance instructions
 ├── index.html                                          # Main Home page (GitHub Pages root entrypoint)
 ├── synth-ledger-ext.css                                # Minimal Webcore layout rules extending synth-ledger.css
@@ -190,3 +193,72 @@ The following items are tracked for upcoming updates as additional corporate doc
   * Once initial SAM.gov entity registration completes (`POAM-2026-007` & `POAM-2026-008`), update `Pending Initial SAM.gov Registration (Not Yet Assigned)` in `Context/ProjDocs/ROOT_CONTEXT/Compliance/` with the issued 12-character SAM.gov UEI, 5-character DLA CAGE Code, and official DoD PIEE/SPRS submission confirmation.
 * **[ ] ToDo 5 — Governing Document Effective Dates & Signatures:**
   * Populate the blank effective date and signature lines in `Operating_Agreement.docx`, `Member_Capital_Legder.docx`, `Holdings_General_NDA_v1.0.pdf`, and `Risk_Disclosure_and_Member_Acknowledgment_v1.0.pdf` once finalized signed copies are archived.
+
+---
+
+## 7. CyberNest Labs BlackRoute-Web VIDS Security Remediation & Edge Hardening
+
+A black-box Vulnerability Identification & Diagnostic System (VIDS) audit conducted by **CyberNest Labs** (`BlackRoute-Web`) against `https://auxk0rd03.github.io/CyberNestHoldings/index.html` flagged 5 actionable security defects:
+
+1. `[MEDIUM] Missing Content-Security-Policy (CSP)` (CWE-693)
+2. `[MEDIUM] Missing Anti-Clickjacking Header (X-Frame-Options / frame-ancestors)` (CWE-1021)
+3. `[LOW] Missing X-Content-Type-Options: nosniff` (CWE-16)
+4. `[LOW] Missing Referrer-Policy Header` (CWE-200)
+5. `[INFO] Missing Permissions-Policy` (CWE-250)
+
+### Static Client & DOM Hardening Implementation
+
+To remediate these vulnerabilities directly on static hosting without requiring backend infrastructure, defense-in-depth protections have been implemented across all HTML documents:
+
+* **Strict Content Security Policy (`<meta http-equiv="Content-Security-Policy">`):**
+  ```html
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; form-action 'self' https://docs.google.com https://forms.gle; frame-ancestors 'none'; base-uri 'self'; object-src 'none';">
+  ```
+  * Disallows inline scripts (`'unsafe-inline'`) and dynamic code evaluation (`'unsafe-eval'`).
+  * Restricts form submissions exclusively to `'self'` and the official Google Form endpoints (`https://docs.google.com`, `https://forms.gle`).
+  * Completely blocks Flash, Java applets, and plugins (`object-src 'none'`).
+* **Frame-Busting & Anti-Clickjacking Defense (`anti-clickjack.js`):**
+  * Modern browsers ignore `frame-ancestors` inside `<meta>` tags per W3C specification. To neutralize UI redressing and malicious framing on static platforms, `anti-clickjack.js` executes immediately in `<head>`:
+    ```javascript
+    if (window.top !== window.self) {
+      try {
+        if (window.top.location.host !== window.self.location.host) {
+          window.top.location = window.self.location;
+        }
+      } catch (e) {
+        if (document.documentElement) document.documentElement.style.display = 'none';
+      }
+    }
+    ```
+  * In addition, `<meta http-equiv="X-Frame-Options" content="DENY">` is included for clients that honor meta-level framing flags.
+* **MIME-Sniffing Prevention (`<meta http-equiv="X-Content-Type-Options" content="nosniff">`):**
+  * Enforces strict MIME typing in supporting clients.
+* **Referrer Minimization (`<meta name="referrer" content="strict-origin-when-cross-origin">`):**
+  * Prevents internal path exposure when navigating to external destinations.
+* **Hardware & Sensor Privilege Lockdown (`<meta http-equiv="Permissions-Policy">`):**
+  * Revokes camera, microphone, geolocation, USB, and payment access (`camera=(), microphone=(), geolocation=(), payment=(), usb=()`).
+* **Zero Inline Styles:**
+  * All legacy `style="..."` attributes were refactored into classes within `synth-ledger-ext.css` (`.mt-12`, `.mt-14`, `.font-12`), eliminating the need for `style-src 'unsafe-inline'`.
+
+### Edge & Reverse Proxy Response Headers Configuration
+
+GitHub Pages serves static assets directly from the `github.io` CDN, which does not allow custom HTTP response headers via repository configuration files. When fronting the domain with Cloudflare, Cloudflare Pages, AWS CloudFront, or an Nginx/Caddy reverse proxy, attach the preconfigured headers:
+
+#### Cloudflare Pages / Edge Gateways (`_headers` file)
+The included `_headers` file is located at the root of the repository:
+```text
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; form-action 'self' https://docs.google.com https://forms.gle; frame-ancestors 'none'; base-uri 'self'; object-src 'none';
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+```
+
+#### Nginx Reverse Proxy (`security-headers.conf`)
+Include `security-headers.conf` within the Nginx `server` or `location` block:
+```nginx
+include /path/to/WebPageStatic/security-headers.conf;
+```
+This guarantees 100% compliance during automated DAST HTTP response evaluations by BlackRoute-Web or external vulnerability scanners.

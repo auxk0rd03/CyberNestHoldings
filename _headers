@@ -1,0 +1,10 @@
+# CyberNest Holdings LLC - Edge Security Response Headers
+# Compatible with Cloudflare Pages / Edge Gateways
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; form-action 'self' https://docs.google.com https://forms.gle; frame-ancestors 'none'; base-uri 'self'; object-src 'none';
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload

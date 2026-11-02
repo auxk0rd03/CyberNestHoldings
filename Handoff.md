@@ -30,9 +30,9 @@ WebPageStatic/
 │   ├── Labs_Landing/
 │   │   └── index.html                                  # CyberNest Labs page & Software .zip Download Index
 │   ├── Farms_Landing/
-│   │   └── index.html                                  # CyberNest Farms page (body text: N/A)
+│   │   └── index.html                                  # CyberNest Farms page (HaaS, Hosting & Colocation)
 │   └── ADMD_Landing/
-│       └── index.html                                  # CyberNest ADMD page (body text: N/A)
+│       └── index.html                                  # CyberNest ADMD page (Artistry, Design & Media Services)
 └── Context/
     └── ProjDocs/
         ├── ROOT_CONTEXT/
@@ -169,20 +169,21 @@ If you ever need to replace the Google Form link in the future, open `ContactUs/
 
 ---
 
-## 5. How to Update `CyberNest Farms` & `CyberNest ADMD` Copy
+## 5. Departmental Outlines: `CyberNest Farms` & `CyberNest ADMD`
 
-Currently, `Depts/Farms_Landing/index.html` and `Depts/ADMD_Landing/index.html` (and their corresponding sections on `AboutUs/index.html`, `Depts/index.html`, `index.html`, `LandingPg/index.html`, and `CyberNestHoldings/index.html`) contain `N/A` in the body text. When official descriptions for those departments are ready, replace `<p>N/A</p>` in those files with the approved department copy.
+Departmental outlines for **CyberNest Farms** and **CyberNest ADMD** are implemented across all respective landing and directory pages:
+
+* **CyberNest Farms:** Operates a Hardware as a Service (HaaS) model to remove high CapEx barriers and maintenance burdens, lowering the barrier of entry for small businesses to access Enterprise-grade and secure IT & networking solutions. Offers core service plans, Web hosting, Server hosting, and Colocation.
+* **CyberNest ADMD:** Artistry, Design, and Media department. Delivers branding solutions (logos, business cards, website visuals), social media account management for digital marketing sprints, and direct individual media solutions and services.
 
 ---
 
 ## 6. ToDo & Pending Data Checklist
 
-The following items are currently marked `N/A` or pending in the context archive and should be populated as official corporate documentation is finalized:
+The following items are tracked for upcoming updates as additional corporate documentation is finalized:
 
-* **[ ] ToDo 1 — CyberNest Farms Departmental Details (`Depts/Farms_Landing/index.html`, `AboutUs/index.html`, `Depts/index.html`, `index.html`):**
-  * Replace `<p>N/A</p>` with verified operational use-case descriptions, workflows, and departmental project details for **CyberNest Farms** (currently only its internal department status and `10,000` Capital Unit allocation are documented in `Context/ProjDocs`).
-* **[ ] ToDo 2 — CyberNest ADMD Departmental Details (`Depts/ADMD_Landing/index.html`, `AboutUs/index.html`, `Depts/index.html`, `index.html`):**
-  * Replace `<p>N/A</p>` with verified operational use-case descriptions, design/marketing deliverables, and portfolio assets for **CyberNest ADMD (Artistry Design and Marketing Department)** (currently only its formal name, internal department status, and `3,000` Capital Unit allocation are documented in `Context/ProjDocs`).
+* **[x] ToDo 1 — CyberNest Farms Departmental Details:** Implemented HaaS, hosting, and colocation service outlines across `Depts/Farms_Landing/index.html`, `AboutUs/index.html`, `Depts/index.html`, and `index.html`.
+* **[x] ToDo 2 — CyberNest ADMD Departmental Details:** Implemented Artistry, Design, and Media branding and custom media service outlines across `Depts/ADMD_Landing/index.html`, `AboutUs/index.html`, `Depts/index.html`, and `index.html`.
 * **[ ] ToDo 3 — Public Media & Brand Assets (`Context/ProjDocs/ROOT_CONTEXT/Docs_Updated2026/Public_Media/`):**
   * Populate the currently empty `Public_Media/` directory with official company/departmental logos, diagrams, or verified site photography if desired on the static pages.
 * **[ ] ToDo 4 — Federal Contracting Identifiers (`SAM.gov UEI` & `DLA CAGE Code`):**

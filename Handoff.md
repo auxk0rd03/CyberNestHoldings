@@ -120,20 +120,33 @@ The downloadable `.zip` files for **CyberNest Labs** are served from `Context/Pr
    ```text
    ARCHIVE FILENAME               | SIZE (BYTES) | SHA-256 DIGEST
    --------------------------------------------------------------------------------
-   BlackRouteWebPublic-main.zip   | 2667995      | cb658fb51afae77efdd380580d7c8f70ab8f71509ef74eaeb952db8e13d1bf11
-   KwikLogPro-main.zip            | 172462       | 36ce51f0aeb06d449c9f38cc10d0afe61513d4ad56f52eef6f8c02d619d3de2d
-   NestComm-main.zip              | 248168       | c25b2c5dbfaf14271b8b9cec6fba5f62fadb416c01d5f581491b6cbc04f9ba1a
-   NestLink-main.zip              | 5139945      | f0e48e5e4dd5877a083fbf8d42d499a2a0c39e913e03483fd3cf56f41384f0bc
-   NestPatch-main.zip             | 155298       | 5f64521f893f5258044a57b530ecfa9b928ed2e686749015dddd70f46cfd5891
-   NestSBOM-main.zip              | 47447        | 3f4d917e4c0187619b8647c4d859e753c79a5f6cbc1e4fddf776020dff31cd1c
+   BlackRouteWebPublic-main.zip   | 2675557      | 1498a8711792dd0fa8dacd221067a2878a645d0aebe5b026f54cdcacca455130
+   KwikLogPro-main.zip            | 178072       | 27cfad218717f30cd47cbb5b77fe7a8d39d143cbc153fb2002a72927e8d590cb
+   NestComm-main.zip              | 264210       | e8d1f94b74ca14f7dffe2c5259e5fce601137565e754f614be757083b6e16a52
+   NestLink-main.zip              | 5152791      | da367642239d8201c33c4f4609e41d4801d19fa2d2f00fc3335cb443cb6706e0
+   NestPatch-main.zip             | 176839       | 268840edcc55bfbd9c2db77ca59e635ddaf6ce47a0fb6ba887cf7ffe800d4431
+   NestSBOM-main.zip              | 53881        | 4aafd856eb41817c8d25e54b3c6dd9ec6d01c1bd64b5c13baad6124e2e7d962a
+   --------------------------------------------------------------------------------
    ```
-3. If the file size or SHA-256 hash changed, update the corresponding row in:
+3. To pull fresh archives directly from GitHub repositories automatically, run:
+   ```bash
+   ./update_archive_index.sh --pull-github
+   ```
+4. Active Working GitHub Repositories:
+   * **BlackRouteWeb:** `https://github.com/auxk0rd03/BlackRouteWebPublic.git`
+   * **NestPatch:** `https://github.com/auxk0rd03/NestPatch.git`
+   * **NestLink:** `https://github.com/auxk0rd03/NestLink.git`
+   * **NestComm:** `https://github.com/auxk0rd03/NestComm.git`
+   * **NestSBOM:** `https://github.com/auxk0rd03/NestSBOM.git`
+   * **KwikLogPro:** `https://github.com/auxk0rd03/KwikLogPro.git`
+5. If the file size or SHA-256 hash changed, update the corresponding rows in:
    * `Depts/Labs_Landing/index.html`
    * `Context/ProjDocs/SoftwareZips/index.html`
-4. Commit and push to `main`:
+   * `Context/ProjDocs/SoftwareZips/manifest.json`
+6. Commit and push to `main`:
    ```bash
    git add Context/ProjDocs/SoftwareZips/ Depts/Labs_Landing/index.html
-   git commit -m "Update CyberNest Labs software archives"
+   git commit -m "Update CyberNest Labs software archives and repository links"
    git push
    ```
 
